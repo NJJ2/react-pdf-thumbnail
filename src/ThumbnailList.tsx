@@ -51,7 +51,11 @@ const ThumbnailList: React.FC<ThumbnailListProps> = ({
                         })
                     }
                     key={`thumbnail-${index}`}
-                    onClick={() => onJumpToPage(index)}
+                    onClick={(e) => {
+                        console.log('thumb click', e.detail);
+                        onJumpToPage(index);
+                    }}
+                    
                 >
                     <ThumbnailContainer
                         doc={doc}
