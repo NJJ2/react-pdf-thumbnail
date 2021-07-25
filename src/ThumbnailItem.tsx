@@ -48,7 +48,7 @@ const ThumbnailItem: React.FC<ThumbnailItemProps> = ({
             () => setSrc(canvas.toDataURL()),
             () => {/**/},
         );
-    }, [rotation]);
+    }, []);
 
     return (
         !src
